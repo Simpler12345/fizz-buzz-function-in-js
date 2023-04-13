@@ -1,0 +1,23 @@
+let phoneNumber = prompt("please enter your phone number:");
+let sum =0;
+
+for(let i=0;i<phoneNumber.length;i++) {
+    sum+=parseInt(phoneNumber.charAt(i));
+    
+}
+if(sum%4 === 0 && sum%5 === 0){
+    console.log("Fizz Buzz");
+    }
+    else if (sum %4==0){
+        console.log("Fizz");
+    }
+    else if (sum%5==0){
+        console.log("Buzz");
+    }
+else{
+    console.log("The sum of digit is not divisble by 4 or 5");
+}
+
+output:
+please enter your phone number:9000000099
+The sum of digit is not divisble by 4 or 5
